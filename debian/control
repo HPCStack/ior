@@ -1,0 +1,20 @@
+Source: ior
+Section: universe/admin
+Priority: optional
+Maintainer: Yuriy Shestakov <yshestakov@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: https://www.nersc.gov/users/computational-systems/cori/nersc-8-procurement/trinity-nersc-8-rfp/nersc-8-trinity-benchmarks/ior/
+#Vcs-Git: git://git.debian.org/collab-maint/ior.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/ior.git;a=summary
+
+Package: ior
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libopenmpi-dev
+Description: IOR is parallel fs I/O performance test tool at both the POSIX and MPI-IO level.
+
+Package: ior-doc
+Architecture: all
+Description: Documentation for IOR
+ IOR is designed to measure parallel file system I/O performance at both the POSIX and MPI-IO level.  "IOR" stands  "InterleavedOrRandom,” which has very little to do with how the program works currently.   This parallel program performs writes and reads to/from files under several sets of conditions and reports the resulting throughput rates. 
+

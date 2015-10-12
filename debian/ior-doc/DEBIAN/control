@@ -1,0 +1,11 @@
+Package: ior-doc
+Source: ior
+Version: 2.10.3-1
+Architecture: all
+Maintainer: Yuriy Shestakov <yshestakov@gmail.com>
+Installed-Size: 26
+Section: universe/admin
+Priority: optional
+Homepage: https://www.nersc.gov/users/computational-systems/cori/nersc-8-procurement/trinity-nersc-8-rfp/nersc-8-trinity-benchmarks/ior/
+Description: Documentation for IOR
+ IOR is designed to measure parallel file system I/O performance at both the POSIX and MPI-IO level.  "IOR" stands  "InterleavedOrRandom,” which has very little to do with how the program works currently.   This parallel program performs writes and reads to/from files under several sets of conditions and reports the resulting throughput rates.
