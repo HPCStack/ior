@@ -2,7 +2,7 @@ Source: ior
 Section: universe/admin
 Priority: optional
 Maintainer: Yuriy Shestakov <yshestakov@gmail.com>
-Build-Depends: debhelper (>= 8.0.0)
+Build-Depends: debhelper (>= 8.0.0), libopenmpi-dev
 Standards-Version: 3.9.4
 Homepage: https://www.nersc.gov/users/computational-systems/cori/nersc-8-procurement/trinity-nersc-8-rfp/nersc-8-trinity-benchmarks/ior/
 #Vcs-Git: git://git.debian.org/collab-maint/ior.git
@@ -10,7 +10,7 @@ Homepage: https://www.nersc.gov/users/computational-systems/cori/nersc-8-procure
 
 Package: ior
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libopenmpi-dev
+Depends: ${shlibs:Depends}, ${misc:Depends}, libopenmpi1.6
 Description: IOR is parallel fs I/O performance test tool at both the POSIX and MPI-IO level.
 
 Package: ior-doc
