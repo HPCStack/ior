@@ -24,9 +24,13 @@
 #\*****************************************************************************/
 
 SRC = ./src/C
+BIN = $(DESTDIR)/../ior/usr/bin
 
 posix:
 	(cd $(SRC) && $(MAKE) posix)
 
 %:
 	(cd $(SRC) && $(MAKE) $@)
+
+install:
+	mkdir -p $(BIN) ; install -m 755 $(SRC)/IOR $(BIN)/

@@ -30,3 +30,11 @@
 
 # Debug files
 *.dSYM/
+
+# binary
+src/C/IOR
+
+# dquilt
+.pc/
+# debianization
+debian/ior*
